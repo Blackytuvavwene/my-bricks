@@ -1,0 +1,1 @@
+{{#isRiverpod}}export '{{page.snakeCase()}}/{{page.snakeCase()}}.dart';{{/isRiverpod}}{{#isNormal}}export '{{page.snakeCase()}}_view.dart';{{/isNormal}}{{#isHooks}}export '{{page.snakeCase()}}/{{page.snakeCase()}}.dart';{{/isHooks}}

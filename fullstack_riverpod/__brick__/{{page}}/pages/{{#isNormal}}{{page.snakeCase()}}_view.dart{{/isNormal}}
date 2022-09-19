@@ -1,0 +1,60 @@
+import 'package:admin/lib.dart';
+import 'package:flutter/material.dart';
+
+class {{page.pascalCase()}}Page extends StatelessWidget {
+  const {{page.pascalCase()}}Page({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppLayout(
+      mobile: _Mobile{{page.pascalCase()}}Page(),
+      tablet: _Tablet{{page.pascalCase()}}Page(),
+      desktop: _Desktop{{page.pascalCase()}}Page(),
+    );
+  }
+}
+
+// mobile page
+class _Mobile{{page.pascalCase()}}Page extends StatelessWidget {
+  const _Mobile{{page.pascalCase()}}Page({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
+      body: const Center(
+        child: Text('Mobile {{page.pascalCase()}}Page'),
+      ),
+    );
+  }
+}
+
+// tablet page
+class _Tablet{{page.pascalCase()}}Page extends StatelessWidget {
+  const _Tablet{{page.pascalCase()}}Page({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
+      body: const Center(
+        child: Text('Tablet {{page.pascalCase()}}Page'),
+      ),
+    );
+  }
+}
+
+// desktop page
+class _Desktop{{page.pascalCase()}}Page extends StatelessWidget {
+  const _Desktop{{page.pascalCase()}}Page({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.background,
+      body: const Center(
+        child: Text('Desktop {{page.pascalCase()}}Page'),
+      ),
+    );
+  }
+}
